@@ -18,11 +18,11 @@
 
 </head>
 
-<body>
+<body style="margin: 0px;">
   <header style="background-color: black;">
     <nav class="navbar navbar-expand-lg transparent">
       <div class="container">
-        <a class="navbar-brand brand-name" href="/">Watch it Outside</a>
+        <a class="navbar-brand brand-name" href="#">Watch it Outside</a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#shows">Shows</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#venue">Venue</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#news">News</a>
@@ -50,9 +50,9 @@
   <div>
     <div class="banner-bg" style="text-align: right;">
       <div class="container banner">
-        <p class="lead text-white">Get Ready with your Tickets.</p>
+        <p class="lead text-white">Get Ready with your Tickets and take part in</p>
         <h1 style="color: red;">"Watch it Outside <br> Boston Edition"</h1>
-        <p class="text-white">is coming soon.</p>
+        <p class="lead text-white"> an Outdoor Film Festival in Boston.</p>
         <a class="btn btn-danger btn-lg" href="#ticket" role="button"><i class="fas fa-ticket-alt"></i> Get Ticket</a>
       </div>
     </div>
@@ -300,7 +300,7 @@
         <a href="https://www.boston.com/" class="btn btn-outline-danger mb-3">View All</a>
       </div>
 
-      <div class="container pb-3">
+      <div class="container pb-3" id="venue">
         <h3 class="text-white pt-5 pb-2">Venue</h3>
         <div class="row venue-box no-gutters">
           <div class="col-lg-8 p-4">
@@ -324,24 +324,25 @@
     </div>
     <div id="ticket">
       <div class="container">
-        <h3 class="pt-5 pb-3 text-danger">Tickets</h3>
-        <form>
+        <h3 class="pt-5 pb-3 text-danger">Tickets*</h3>
+        <p class="alert alert-danger">* Tickets are available at free of cost</p>
+        <form class="needs-validation">
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Rishabh Soni">
+            <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Rishabh Soni" required>
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@email.com">
+            <input type="email" class="form-control" id="email" placeholder="name@email.com" required>
 
             <label for="text">Phone Number</label>
-            <input type="text" class="form-control" id="text" placeholder="9999999990">
+            <input type="text" class="form-control" id="text" placeholder="9999999990" required>
 
           </div>
           <div class="form-group">
             <label for="exampleFormControlSelect1">Select Show</label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option selected>Select Show</option>
+              <option selected disabled value="">Select Show</option>
               <option>End Game | Day 1 | Aug 5th</option>
               <option>Infinity War | Day 1 | Aug 5th</option>
               <option>Far From Home | Day 1 | Aug 5th</option>
@@ -360,7 +361,9 @@
         </form>
       </div>
     </div>
-    <footer style="background-color: black;">
+  </div>
+  <div  style="background-color: black;">
+    <footer>
       <h6 class="text-white text-center p-3">Made with <i>&#10084;</i> by Rishabh</h6>
       <span class="d-flex justify-content-center">
         <a href="https://www.facebook.com/" class="socialmedia nav-item m-2"><i class="fab fa-facebook"></i></a>
@@ -369,7 +372,7 @@
       </span>
       <p class="text-white text-center p-3"> &copy; Watch it Outside | All right reserved</p>
     </footer>
-
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
