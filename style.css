@@ -1,0 +1,88 @@
+a{
+    color: white;
+}
+a:hover{
+    color: red;
+}
+
+.brand-name{
+    font-size: x-large;
+    color: red;
+    font-family: sans-serif;
+}
+
+.highli{
+    margin-top: 100px;
+    z-index: 1999;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    padding: 1rem;
+  }
+
+.banner-bg{
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+}  
+.banner{
+    padding-top: 150px;
+    padding-bottom: 200px;
+
+}
+
+.news-bg{
+    background-image: url(images/bg13.jpg);
+    background-size: cover;
+}
+
+.shows-bg{
+    background-image: url(images/bg10.jpg);
+    background-size: cover;
+}
+
+.venue-bg{
+    background-image: url(images/bg11.jpg);
+    background-size: cover;
+}
+
+.venue-box{
+    border-style: none;
+    border-radius: 25px;
+    background-color: brown;
+ 
+}
+
+.venue-text{
+    color: white;
+    opacity: 1;
+}
+
+
+.show-tab{
+    color:white;
+}
+.show-tab:active{
+    color: red;
+}
+
+.gener{
+    border-style: outset;
+    border-color: red;
+    padding: 7px;
+    color: red;
+    background-color: black;
+
+}
+
+.socialmedia{
+    border-style: none;
+    background-color: #ab1005;
+    border-radius: 25%;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.socialmedia:hover{
+    color: black;
+}
